@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "147567962692",
+    "project_id": "scrabble-fe91a",
+    "storage_bucket": "scrabble-fe91a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147567962692:android:9fa54fca84282ecbc4ea11",
+        "android_client_info": {
+          "package_name": "com.example.mindjot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147567962692-46h4h8deopcc2dn2v103rkjcli1r7f9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPYHN27PnudrSn7PeZp49TrEZpkDA5d6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147567962692-46h4h8deopcc2dn2v103rkjcli1r7f9f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "147567962692-8qiut23tv94p41grl8v3bcc6mdjt7374.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mindjot"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
