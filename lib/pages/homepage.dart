@@ -150,66 +150,11 @@ class _HomePageState extends State<HomePage> {
                                                 showDialog(
                                                     barrierDismissible: false,
                                                     context: context,
-                                                    builder: (context) {
-                                                      return Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                    .symmetric(
-                                                                horizontal:
-                                                                    12.0,
-                                                                vertical: 20),
-                                                        child: Dialog(
-                                                          shape: RoundedRectangleBorder(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          12)),
-                                                          backgroundColor:
-                                                              Colors.white,
-                                                          child: Column(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .min,
-                                                            children: [
-                                                              const Text(
-                                                                "Are you sure you want to delete this note?",
-                                                                style: TextStyle(
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w500),
-                                                              ),
-                                                              const HeightBox(
-                                                                  5),
-                                                              const Divider(),
-                                                              5.heightBox,
-                                                              Row(
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .spaceAround,
-                                                                children: [
-                                                                  ElevatedButton(
-                                                                      onPressed:
-                                                                          () {
-                                                                        controller
-                                                                            .deleteNote(currentNote);
-                                                                        Get.back();
-                                                                      },
-                                                                      child: Text(
-                                                                          "Yes")),
-                                                                  ElevatedButton(
-                                                                      onPressed:
-                                                                          () {
-                                                                        Get.back();
-                                                                      },
-                                                                      child: Text(
-                                                                          "No"))
-                                                                ],
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      );
-                                                    });
+                                                    builder: (context) =>
+                                                        deleteDialog(
+                                                            context,
+                                                            controller,
+                                                            currentNote));
                                               },
                                               child: Container(
                                                 padding:
